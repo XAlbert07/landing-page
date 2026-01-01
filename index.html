@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConcoursElite – Réussir les concours de la fonction publique</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="./dist/styles.css">
+
+
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background text-foreground font-body">
+
+
+<header
+  id="header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-5"
+>
+  <div class="container-custom flex items-center justify-between">
+
+    
+    <a href="#" data-scroll-top class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center">
+        <span class="text-primary-foreground font-heading font-bold text-xl">
+          C
+        </span>
+      </div>
+      <span class="font-heading font-bold text-xl logo-text nav-light">
+         ConcoursElite
+       </span>
+
+    </a>
+
+    
+    <nav class="hidden md:flex items-center gap-8">
+      <button data-scroll="#formations" class="nav-link nav-item">Formations</button>
+      <button data-scroll="#methode" class="nav-link nav-item">Méthode</button>
+      <button data-scroll="#concours" class="nav-link nav-item">Concours</button>
+      <button data-scroll="#tarifs" class="nav-link nav-item">Tarifs</button>
+
+      <button
+  id="header-cta"
+  data-scroll="#inscription"
+  class="btn-outline-light"
+>
+  S’inscrire
+</button>
+
+    </nav>
+
+    
+    <button id="menu-btn" class="md:hidden p-2 ">
+      <i
+        id="menu-icon"
+        data-lucide="menu"
+        class="w-6 h-6"
+      ></i>
+    </button>
+  </div>
+
+  
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden absolute top-full left-0 right-0 bg-card shadow-medium animate-fade-in"
+  >
+    <nav class="flex flex-col p-4 gap-2">
+      <button data-scroll="#formations" class="mobile-link">Formations</button>
+      <button data-scroll="#methode" class="mobile-link">Méthode</button>
+      <button data-scroll="#concours" class="mobile-link">Concours</button>
+      <button data-scroll="#tarifs" class="mobile-link">Tarifs</button>
+      <button
+        data-scroll="#inscription"
+        class="mt-2 py-3 rounded-lg bg-accent text-accent-foreground font-semibold"
+      >
+        S’inscrire maintenant
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+<section class="relative min-h-screen bg-gradient-hero overflow-hidden">
+
+  
+  <div class="absolute inset-0 opacity-10">
+    <div
+      class="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full blur-3xl"
+    ></div>
+    <div
+      class="absolute bottom-20 right-10 w-96 h-96 bg-primary-foreground rounded-full blur-3xl"
+    ></div>
+  </div>
+
+  <div
+    class="relative container-custom min-h-screen flex items-center pt-24 pb-16"
+  >
+    <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
+
+     
+      <div class="text-center lg:text-left">
+
+        
+        <div
+          class="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-up"
+        >
+          <i data-lucide="award" class="w-4 h-4 text-accent"></i>
+          <span
+            class="text-primary-foreground/90 text-sm font-medium"
+          >
+            +500 candidats accompagnés depuis 2020
+          </span>
+        </div>
+
+        
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100"
+        >
+          Réussissez vos
+          <span class="text-gradient-gold"> concours</span>
+          de la fonction publique
+        </h1>
+
+        
+        <p
+          class="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-up delay-200"
+        >
+          Une préparation structurée, un accompagnement personnalisé et une
+          méthode éprouvée pour décrocher votre place dans l'administration
+          burkinabè.
+        </p>
+
+        
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10 animate-fade-up delay-300"
+        >
+          <button
+            data-scroll="#inscription"
+            class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-semibold"
+          >
+            Commencer ma préparation
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </button>
+
+          <button
+            data-scroll="#methode"
+            class="px-8 py-4 rounded-xl border border-primary-foreground text-primary-foreground font-semibold"
+          >
+            Découvrir la méthode
+          </button>
+        </div>
+
+        
+        <div
+          class="flex flex-wrap gap-6 justify-center lg:justify-start animate-fade-up delay-400"
+        >
+          <div class="flex items-center gap-2 text-primary-foreground/80">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-accent"></i>
+            <span class="text-sm font-medium">Cours en ligne 24h/24</span>
+          </div>
+
+          <div class="flex items-center gap-2 text-primary-foreground/80">
+            <i data-lucide="users" class="w-5 h-5 text-accent"></i>
+            <span class="text-sm font-medium">Suivi personnalisé</span>
+          </div>
+
+          <div class="flex items-center gap-2 text-primary-foreground/80">
+            <i data-lucide="book-open" class="w-5 h-5 text-accent"></i>
+            <span class="text-sm font-medium">Examens blancs inclus</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div
+        class="hidden lg:grid grid-cols-2 gap-4 animate-fade-up delay-300"
+      >
+
+        <div
+          class="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-all duration-300"
+        >
+          <div
+            class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+          >
+            87%
+          </div>
+          <div class="text-primary-foreground font-semibold">
+            Taux de réussite
+          </div>
+          <div class="text-primary-foreground/60 text-sm">
+            en 2025
+          </div>
+        </div>
+
+        <div
+          class="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-all duration-300 mt-8"
+        >
+          <div
+            class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+          >
+            6
+          </div>
+          <div class="text-primary-foreground font-semibold">
+            Concours préparés
+          </div>
+          <div class="text-primary-foreground/60 text-sm">
+            majeurs
+          </div>
+        </div>
+
+        <div
+          class="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-all duration-300"
+        >
+          <div
+            class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+          >
+            24/7
+          </div>
+          <div class="text-primary-foreground font-semibold">
+            Accès aux cours
+          </div>
+          <div class="text-primary-foreground/60 text-sm">
+            en ligne
+          </div>
+        </div>
+
+        <div
+          class="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/15 transition-all duration-300 mt-8"
+        >
+          <div
+            class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+          >
+            150+
+          </div>
+          <div class="text-primary-foreground font-semibold">
+            Exercices corrigés
+          </div>
+          <div class="text-primary-foreground/60 text-sm">
+            disponibles
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+ 
+<div class="absolute bottom-0 left-0 right-0 -mb-px">
+  <svg
+    viewBox="0 0 1440 120"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-full block"
+  >
+    <path
+      d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H0Z"
+      fill="hsl(var(--background))"
+    />
+  </svg>
+</div>
+
+
+</section>
+
+
+
+<section id="formations" class="section-padding bg-background">
+  <div class="container-custom">
+
+   
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span
+        class="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4"
+      >
+        Pour qui ?
+      </span>
+
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6"
+      >
+        Une formation adaptée à
+        <span class="text-gradient-gold"> votre profil</span>
+      </h2>
+
+      <p class="text-lg text-muted-foreground">
+        Que vous soyez étudiant, travailleur ou en reconversion, notre
+        programme s'adapte à vos contraintes et vos objectifs.
+      </p>
+    </div>
+
+   
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      
+      <div
+        class="group bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30 hover:-translate-y-1"
+      >
+        <div
+          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors"
+        >
+          <i
+            data-lucide="graduation-cap"
+            class="w-7 h-7 text-primary group-hover:text-accent transition-colors"
+          ></i>
+        </div>
+        <h3
+          class="text-xl font-heading font-bold text-foreground mb-3"
+        >
+          Élèves & Étudiants
+        </h3>
+        <p class="text-muted-foreground leading-relaxed">
+          Bacheliers et étudiants préparant leur entrée dans la fonction
+          publique dès la fin de leurs études.
+        </p>
+      </div>
+
+      
+      <div
+        class="group bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30 hover:-translate-y-1"
+      >
+        <div
+          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors"
+        >
+          <i
+            data-lucide="user"
+            class="w-7 h-7 text-primary group-hover:text-accent transition-colors"
+          ></i>
+        </div>
+        <h3
+          class="text-xl font-heading font-bold text-foreground mb-3"
+        >
+          Candidats libres
+        </h3>
+        <p class="text-muted-foreground leading-relaxed">
+          Vous préparez seul(e) ? Notre méthode structurée vous donne toutes les
+          clés pour réussir.
+        </p>
+      </div>
+
+      
+      <div
+        class="group bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30 hover:-translate-y-1"
+      >
+        <div
+          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors"
+        >
+          <i
+            data-lucide="briefcase"
+            class="w-7 h-7 text-primary group-hover:text-accent transition-colors"
+          ></i>
+        </div>
+        <h3
+          class="text-xl font-heading font-bold text-foreground mb-3"
+        >
+          Travailleurs
+        </h3>
+        <p class="text-muted-foreground leading-relaxed">
+          Conciliez vie professionnelle et préparation grâce à nos cours
+          accessibles à tout moment.
+        </p>
+      </div>
+
+      
+      <div
+        class="group bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30 hover:-translate-y-1"
+      >
+        <div
+          class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors"
+        >
+          <i
+            data-lucide="refresh-cw"
+            class="w-7 h-7 text-primary group-hover:text-accent transition-colors"
+          ></i>
+        </div>
+        <h3
+          class="text-xl font-heading font-bold text-foreground mb-3"
+        >
+          Reconversion
+        </h3>
+        <p class="text-muted-foreground leading-relaxed">
+          Vous souhaitez intégrer la fonction publique ? Nous vous accompagnons
+          dans cette transition.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="concours" class="section-padding bg-secondary">
+  <div class="container-custom">
+
+    
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span
+        class="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4"
+      >
+        Concours préparés
+      </span>
+
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6"
+      >
+        Les grands concours de la
+        <span class="text-gradient-gold"> fonction publique</span>
+      </h2>
+
+      <p class="text-lg text-muted-foreground">
+        Nous préparons aux principaux concours de recrutement de
+        l'administration burkinabè avec des programmes spécifiques.
+      </p>
+    </div>
+
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      
+      <div
+        class="group bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+      >
+        <div class="flex items-start gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shrink-0"
+          >
+            <i
+              data-lucide="building-2"
+              class="w-6 h-6 text-primary-foreground"
+            ></i>
+          </div>
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-foreground mb-1"
+            >
+              ENAREF
+            </h3>
+            <p class="text-sm text-accent font-medium mb-2">
+              École Nationale des Régies Financières
+            </p>
+            <p class="text-muted-foreground text-sm">
+              Comptables publics, gestionnaires financiers
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div
+        class="group bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+      >
+        <div class="flex items-start gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-success flex items-center justify-center shrink-0"
+          >
+            <i
+              data-lucide="shield"
+              class="w-6 h-6 text-primary-foreground"
+            ></i>
+          </div>
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-foreground mb-1"
+            >
+              Douanes
+            </h3>
+            <p class="text-sm text-accent font-medium mb-2">
+              Direction Générale des Douanes
+            </p>
+            <p class="text-muted-foreground text-sm">
+              Inspecteurs, contrôleurs, agents des douanes
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div
+        class="group bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+      >
+        <div class="flex items-start gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center shrink-0"
+          >
+            <i
+              data-lucide="landmark"
+              class="w-6 h-6 text-primary-foreground"
+            ></i>
+          </div>
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-foreground mb-1"
+            >
+              IDS
+            </h3>
+            <p class="text-sm text-accent font-medium mb-2">
+              Institut Des Sciences
+            </p>
+            <p class="text-muted-foreground text-sm">
+              Enseignants de sciences (Maths, Physique, SVT)
+            </p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div
+        class="group bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+      >
+        <div class="flex items-start gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shrink-0"
+          >
+            <i
+              data-lucide="scale"
+              class="w-6 h-6 text-primary-foreground"
+            ></i>
+          </div>
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-foreground mb-1"
+            >
+              Police
+            </h3>
+            <p class="text-sm text-accent font-medium mb-2">
+              Police Nationale du Burkina Faso
+            </p>
+            <p class="text-muted-foreground text-sm">
+              Officiers, sous-officiers, agents de police
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div
+        class="group bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+      >
+        <div class="flex items-start gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-success flex items-center justify-center shrink-0"
+          >
+            <i
+              data-lucide="graduation-cap"
+              class="w-6 h-6 text-primary-foreground"
+            ></i>
+          </div>
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-foreground mb-1"
+            >
+              Infirmier
+            </h3>
+            <p class="text-sm text-accent font-medium mb-2">
+              Ministère de la Santé et de l'Hygiène Publique 
+            </p>
+            <p class="text-muted-foreground text-sm">
+              Personnels de santé, administrateurs hospitaliers
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div
+        class="group bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+      >
+        <div class="flex items-start gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center shrink-0"
+          >
+            <i
+              data-lucide="heart"
+              class="w-6 h-6 text-primary-foreground"
+            ></i>
+          </div>
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-foreground mb-1"
+            >
+              professeur des écoles 
+            </h3>
+            <p class="text-sm text-accent font-medium mb-2">
+              Ministère de l'Éducation 
+
+            </p>
+            <p class="text-muted-foreground text-sm">
+              Professeurs certifiés des Lycées et Collèges 
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="methode" class="section-padding bg-background">
+  <div class="container-custom">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+     
+      <div>
+        <span
+          class="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4"
+        >
+          Notre méthode
+        </span>
+
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6"
+        >
+          Une approche
+          <span class="text-gradient-gold"> éprouvée</span> pour réussir
+        </h2>
+
+        <p class="text-lg text-muted-foreground mb-8">
+          Notre méthode combine rigueur académique et accompagnement bienveillant.
+          Chaque étape est conçue pour vous faire progresser méthodiquement vers
+          la réussite.
+        </p>
+
+        
+        <div class="bg-primary/5 rounded-2xl p-6 border border-primary/10">
+          <div class="flex items-center gap-4 mb-4">
+            <div
+              class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center"
+            >
+              <i data-lucide="trophy" class="w-6 h-6 text-accent"></i>
+            </div>
+            <div>
+              <p class="font-heading font-bold text-foreground text-lg">
+                87% de réussite
+              </p>
+              <p class="text-muted-foreground text-sm">
+                Parmi nos candidats préparés en 2024
+              </p>
+            </div>
+          </div>
+          <p class="text-muted-foreground text-sm italic">
+            "La clé du succès réside dans la régularité, la discipline et un
+            accompagnement de qualité."
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        
+        <div
+          class="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+        >
+          <span
+            class="absolute -top-3 -right-3 text-6xl font-heading font-bold text-primary/5 group-hover:text-accent/10 transition-colors"
+          >
+            01
+          </span>
+          <div class="relative">
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors"
+            >
+              <i
+                data-lucide="book-open"
+                class="w-5 h-5 text-primary group-hover:text-accent transition-colors"
+              ></i>
+            </div>
+            <h3
+              class="text-lg font-heading font-bold text-foreground mb-2"
+            >
+              Cours structurés
+            </h3>
+            <p class="text-muted-foreground text-sm leading-relaxed">
+              Des modules complets couvrant tout le programme officiel,
+              rédigés par des formateurs expérimentés.
+            </p>
+          </div>
+        </div>
+
+       
+        <div
+          class="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+        >
+          <span
+            class="absolute -top-3 -right-3 text-6xl font-heading font-bold text-primary/5 group-hover:text-accent/10 transition-colors"
+          >
+            02
+          </span>
+          <div class="relative">
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors"
+            >
+              <i
+                data-lucide="pen-tool"
+                class="w-5 h-5 text-primary group-hover:text-accent transition-colors"
+              ></i>
+            </div>
+            <h3
+              class="text-lg font-heading font-bold text-foreground mb-2"
+            >
+              Exercices corrigés
+            </h3>
+            <p class="text-muted-foreground text-sm leading-relaxed">
+              Des centaines d'exercices avec corrections détaillées pour
+              maîtriser chaque notion.
+            </p>
+          </div>
+        </div>
+
+        
+        <div
+          class="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+        >
+          <span
+            class="absolute -top-3 -right-3 text-6xl font-heading font-bold text-primary/5 group-hover:text-accent/10 transition-colors"
+          >
+            03
+          </span>
+          <div class="relative">
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors"
+            >
+              <i
+                data-lucide="file-check"
+                class="w-5 h-5 text-primary group-hover:text-accent transition-colors"
+              ></i>
+            </div>
+            <h3
+              class="text-lg font-heading font-bold text-foreground mb-2"
+            >
+              Examens blancs
+            </h3>
+            <p class="text-muted-foreground text-sm leading-relaxed">
+              Mettez-vous en conditions réelles avec nos simulations
+              d'examens chronométrées.
+            </p>
+          </div>
+        </div>
+
+        
+        <div
+          class="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+        >
+          <span
+            class="absolute -top-3 -right-3 text-6xl font-heading font-bold text-primary/5 group-hover:text-accent/10 transition-colors"
+          >
+            04
+          </span>
+          <div class="relative">
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors"
+            >
+              <i
+                data-lucide="users"
+                class="w-5 h-5 text-primary group-hover:text-accent transition-colors"
+              ></i>
+            </div>
+            <h3
+              class="text-lg font-heading font-bold text-foreground mb-2"
+            >
+              Suivi personnalisé
+            </h3>
+            <p class="text-muted-foreground text-sm leading-relaxed">
+              Un accompagnement individuel pour identifier vos lacunes et
+              progresser efficacement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 05 -->
+        <div
+          class="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+        >
+          <span
+            class="absolute -top-3 -right-3 text-6xl font-heading font-bold text-primary/5 group-hover:text-accent/10 transition-colors"
+          >
+            05
+          </span>
+          <div class="relative">
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors"
+            >
+              <i
+                data-lucide="clock"
+                class="w-5 h-5 text-primary group-hover:text-accent transition-colors"
+              ></i>
+            </div>
+            <h3
+              class="text-lg font-heading font-bold text-foreground mb-2"
+            >
+              Planning de révision
+            </h3>
+            <p class="text-muted-foreground text-sm leading-relaxed">
+              Un calendrier optimisé pour organiser vos révisions
+              jusqu'au jour J.
+            </p>
+          </div>
+        </div>
+
+        
+        <div
+          class="group relative bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-border hover:border-accent/30"
+        >
+          <span
+            class="absolute -top-3 -right-3 text-6xl font-heading font-bold text-primary/5 group-hover:text-accent/10 transition-colors"
+          >
+            06
+          </span>
+          <div class="relative">
+            <div
+              class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors"
+            >
+              <i
+                data-lucide="trophy"
+                class="w-5 h-5 text-primary group-hover:text-accent transition-colors"
+              ></i>
+            </div>
+            <h3
+              class="text-lg font-heading font-bold text-foreground mb-2"
+            >
+              Coaching mental
+            </h3>
+            <p class="text-muted-foreground text-sm leading-relaxed">
+              Techniques de gestion du stress et de motivation pour
+              rester concentré(e).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section-padding bg-secondary">
+  <div class="container-custom">
+
+    
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span
+        class="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4"
+      >
+        Ils nous font confiance
+      </span>
+
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6"
+      >
+        Rejoignez nos
+        <span class="text-gradient-gold"> candidats admis</span>
+      </h2>
+
+      <p class="text-lg text-muted-foreground">
+        Découvrez les témoignages de ceux qui ont réussi leur concours avec
+        notre accompagnement.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+      <div
+        class="bg-card rounded-2xl p-6 text-center shadow-soft border border-border"
+      >
+        <div
+          class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+        >
+          500+
+        </div>
+        <div class="text-muted-foreground font-medium">
+          Candidats formés
+        </div>
+      </div>
+
+      <div
+        class="bg-card rounded-2xl p-6 text-center shadow-soft border border-border"
+      >
+        <div
+          class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+        >
+          87%
+        </div>
+        <div class="text-muted-foreground font-medium">
+          Taux de réussite
+        </div>
+      </div>
+
+      <div
+        class="bg-card rounded-2xl p-6 text-center shadow-soft border border-border"
+      >
+        <div
+          class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+        >
+          4 ans
+        </div>
+        <div class="text-muted-foreground font-medium">
+          D'expérience
+        </div>
+      </div>
+
+      <div
+        class="bg-card rounded-2xl p-6 text-center shadow-soft border border-border"
+      >
+        <div
+          class="text-3xl md:text-4xl font-heading font-bold text-accent mb-2"
+        >
+          6
+        </div>
+        <div class="text-muted-foreground font-medium">
+          Concours préparés
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid md:grid-cols-3 gap-6">
+
+      
+      <div
+        class="bg-card rounded-2xl p-8 shadow-soft border border-border hover:border-accent/30 transition-all duration-300"
+      >
+        <i
+          data-lucide="quote"
+          class="w-10 h-10 text-accent/30 mb-4"
+        ></i>
+
+        <p class="text-foreground leading-relaxed mb-6">
+          "Grâce à ConcoursElite, j'ai pu me préparer efficacement tout en
+          continuant mes études. Les examens blancs m'ont permis d'arriver
+          sereine le jour J."
+        </p>
+
+        <div class="flex items-center gap-1 mb-4">
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+        </div>
+
+        <div>
+          <p class="font-heading font-bold text-foreground">
+            Aminata Ouédraogo
+          </p>
+          <p class="text-muted-foreground text-sm">
+            Admise à l'ENAERF 2025
+          </p>
+        </div>
+      </div>
+
+      
+      <div
+        class="bg-card rounded-2xl p-8 shadow-soft border border-border hover:border-accent/30 transition-all duration-300"
+      >
+        <i
+          data-lucide="quote"
+          class="w-10 h-10 text-accent/30 mb-4"
+        ></i>
+
+        <p class="text-foreground leading-relaxed mb-6">
+          "La qualité des cours et le suivi personnalisé font vraiment la
+          différence. Je recommande à tous ceux qui veulent réussir du premier
+          coup."
+        </p>
+
+        <div class="flex items-center gap-1 mb-4">
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+        </div>
+
+        <div>
+          <p class="font-heading font-bold text-foreground">
+            Ibrahim Sawadogo
+          </p>
+          <p class="text-muted-foreground text-sm">
+            Contrôleur des Douanes
+          </p>
+        </div>
+      </div>
+
+     
+      <div
+        class="bg-card rounded-2xl p-8 shadow-soft border border-border hover:border-accent/30 transition-all duration-300"
+      >
+        <i
+          data-lucide="quote"
+          class="w-10 h-10 text-accent/30 mb-4"
+        ></i>
+
+        <p class="text-foreground leading-relaxed mb-6">
+          "J'ai apprécié la flexibilité des cours en ligne. Travaillant déjà,
+          je pouvais réviser le soir et le weekend. Résultat : admise !"
+        </p>
+
+        <div class="flex items-center gap-1 mb-4">
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+        </div>
+
+        <div>
+          <p class="font-heading font-bold text-foreground">
+            Fatou Compaoré
+          </p>
+          <p class="text-muted-foreground text-sm">
+            Admise aux IDS 2024
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="tarifs" class="section-padding bg-background">
+  <div class="container-custom">
+
+    
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
+        Nos tarifs
+      </span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+        Investissez dans <span class="text-gradient-gold">votre avenir</span>
+      </h2>
+      <p class="text-lg text-muted-foreground">
+        Des formules adaptées à chaque besoin et chaque budget. Paiement mensuel, sans engagement.
+      </p>
+    </div>
+
+    
+    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+      
+      <div class="bg-card rounded-2xl p-8 border border-border shadow-soft hover:shadow-medium transition-all duration-300">
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-heading font-bold mb-2">Essentiel</h3>
+          <p class="text-muted-foreground text-sm mb-4">
+            Pour commencer votre préparation en autonomie
+          </p>
+          <div class="flex items-baseline justify-center gap-1">
+            <span class="text-4xl font-heading font-bold">10000</span>
+            <span class="text-muted-foreground text-sm">FCFA / mois</span>
+          </div>
+        </div>
+
+        <ul class="space-y-4 mb-8">
+          <li class="flex gap-3"><span class="text-success">✔</span> Accès à tous les cours en ligne</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Exercices corrigés</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Forum d’entraide</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Support par email</li>
+        </ul>
+
+        <button data-scroll="#inscription"
+          class="w-full py-3 rounded-xl border border-border font-semibold hover:bg-secondary transition">
+          Choisir ce plan
+        </button>
+      </div>
+
+      
+      <div class="relative bg-card rounded-2xl p-8 border border-accent shadow-medium scale-105 z-10">
+
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold">
+          ⭐ Populaire
+        </div>
+
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-heading font-bold mb-2">Premium</h3>
+          <p class="text-muted-foreground text-sm mb-4">
+            L’accompagnement complet pour maximiser vos chances
+          </p>
+          <div class="flex items-baseline justify-center gap-1">
+            <span class="text-4xl font-heading font-bold">15000</span>
+            <span class="text-muted-foreground text-sm">FCFA / mois</span>
+          </div>
+        </div>
+
+        <ul class="space-y-4 mb-8">
+          <li class="flex gap-3"><span class="text-success">✔</span> Tout le plan Essentiel</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Examens blancs hebdomadaires</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Corrections personnalisées</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Coaching individuel (2h/mois)</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Groupe WhatsApp privé</li>
+        </ul>
+
+        <button data-scroll="#inscription"
+          class="w-full py-3 rounded-xl bg-accent text-accent-foreground font-semibold">
+          Choisir ce plan
+        </button>
+      </div>
+
+      
+      <div class="bg-card rounded-2xl p-8 border border-border shadow-soft hover:shadow-medium transition-all duration-300">
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-heading font-bold mb-2">Intensif</h3>
+          <p class="text-muted-foreground text-sm mb-4">
+            Préparation intensive avec suivi quotidien
+          </p>
+          <div class="flex items-baseline justify-center gap-1">
+            <span class="text-4xl font-heading font-bold">25000</span>
+            <span class="text-muted-foreground text-sm">FCFA / mois</span>
+          </div>
+        </div>
+
+        <ul class="space-y-4 mb-8">
+          <li class="flex gap-3"><span class="text-success">✔</span> Tout le plan Premium</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Coaching individuel (6h/mois)</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Sessions live exclusives</li>
+          <li class="flex gap-3"><span class="text-success">✔</span> Préparation aux oraux</li>
+        </ul>
+
+        <button data-scroll="#inscription"
+          class="w-full py-3 rounded-xl border border-border font-semibold hover:bg-secondary transition">
+          Choisir ce plan
+        </button>
+      </div>
+
+    </div>
+
+   
+    <p class="text-center text-muted-foreground text-sm mt-10">
+      * Garantie de résultat : si vous n’êtes pas admis malgré un suivi assidu,
+      la prochaine session est offerte.
+    </p>
+
+  </div>
+</section>
+
+
+
+<section
+  id="inscription"
+  class="section-padding bg-gradient-hero relative overflow-hidden"
+>
+ 
+  <div class="absolute inset-0 opacity-10">
+    <div
+      class="absolute top-20 right-10 w-72 h-72 bg-accent rounded-full blur-3xl"
+    ></div>
+    <div
+      class="absolute bottom-20 left-10 w-96 h-96 bg-primary-foreground rounded-full blur-3xl"
+    ></div>
+  </div>
+
+  <div class="container-custom relative">
+
+   
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span
+        class="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4"
+      >
+        Inscription
+      </span>
+
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-foreground mb-6"
+      >
+        Prêt(e) à <span class="text-gradient-gold">réussir</span> ?
+      </h2>
+
+      <p class="text-lg text-primary-foreground/80">
+        Laissez-nous vos coordonnées et nous vous recontacterons pour vous
+        accompagner dans votre préparation.
+      </p>
+    </div>
+
+   
+    <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+     
+      <div class="bg-card rounded-2xl p-8 shadow-medium">
+        <form class="space-y-6">
+
+          <div>
+            <label class="text-foreground font-medium">
+              Nom complet
+            </label>
+            <input
+              type="text"
+              placeholder="Ex : Aminata Ouédraogo"
+              class="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+            />
+          </div>
+
+          <div>
+            <label class="text-foreground font-medium">
+              Numéro de téléphone
+            </label>
+            <input
+              type="tel"
+              placeholder="Ex : 70 00 00 00"
+              class="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+            />
+          </div>
+
+          <div>
+            <label class="text-foreground font-medium">
+              Concours visé
+            </label>
+            <select
+              class="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+            >
+              <option value="">Sélectionnez un concours</option>
+              <option>ENAREF</option>
+              <option>Douanes</option>
+              <option>Proffesseur des écoles</option>
+              <option>Police</option>
+              <option>IDS</option>
+              <option>Infirmier</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full py-4 rounded-xl bg-accent text-accent-foreground font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition"
+          >
+            <i data-lucide="send" class="w-5 h-5"></i>
+            Envoyer ma demande
+          </button>
+        </form>
+      </div>
+
+      
+      <div class="flex flex-col justify-center space-y-8">
+
+        <div>
+          <h3
+            class="text-2xl font-heading font-bold text-primary-foreground mb-4"
+          >
+            Ou contactez-nous directement
+          </h3>
+
+          <p class="text-primary-foreground/80 mb-6">
+            Vous préférez un échange direct ? Notre équipe est disponible
+            pour répondre à toutes vos questions.
+          </p>
+
+          <a
+            href="https://wa.me/22670000000"
+            target="_blank"
+            class="inline-flex items-center gap-3 px-6 py-4 rounded-xl bg-success text-success-foreground font-semibold hover:opacity-90 transition"
+          >
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            Discuter sur WhatsApp
+          </a>
+        </div>
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 text-primary-foreground/80">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center"
+            >
+              <i data-lucide="phone" class="w-5 h-5 text-accent"></i>
+            </div>
+            <span>+226 70 00 00 00</span>
+          </div>
+
+          <div class="flex items-center gap-4 text-primary-foreground/80">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center"
+            >
+              <i data-lucide="mail" class="w-5 h-5 text-accent"></i>
+            </div>
+            <span>contact@concourselite.bf</span>
+          </div>
+
+          <div class="flex items-center gap-4 text-primary-foreground/80">
+            <div
+              class="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center"
+            >
+              <i data-lucide="map-pin" class="w-5 h-5 text-accent"></i>
+            </div>
+            <span>Ouagadougou, Burkina Faso</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-foreground text-primary-foreground py-12">
+  <div class="container-custom">
+
+    <div
+      class="flex flex-col md:flex-row items-center justify-between gap-6"
+    >
+     
+      <div class="text-center md:text-left">
+        <div
+          class="flex items-center justify-center md:justify-start gap-2 mb-2"
+        >
+          <div
+            class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center"
+          >
+            <span
+              class="font-heading font-bold text-accent-foreground"
+            >
+              C
+            </span>
+          </div>
+          <span class="font-heading font-bold text-lg">
+            ConcoursElite
+          </span>
+        </div>
+
+        <p class="text-primary-foreground/60 text-sm">
+          Votre partenaire pour réussir les concours de la fonction
+          publique au Burkina Faso
+        </p>
+      </div>
+
+      
+      <div class="flex items-center gap-8">
+        <div class="text-center md:text-right">
+          <p class="text-primary-foreground/60 text-sm">
+            contact@concourselite.bf
+          </p>
+          <p class="text-primary-foreground/60 text-sm">
+            +226 70 00 00 00
+          </p>
+        </div>
+
+        <button
+          data-scroll-top
+          aria-label="Retour en haut"
+          class="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+        >
+          <i data-lucide="arrow-up" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    
+    <div
+      class="border-t border-primary-foreground/10 mt-8 pt-8 text-center"
+    >
+      <p class="text-primary-foreground/40 text-sm">
+        © 2025 ConcoursElite. Tous droits réservés. |
+        
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script src="js/main.js" defer></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

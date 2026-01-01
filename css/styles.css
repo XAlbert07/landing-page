@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* ===============================
+   CSS VARIABLES 
+================================ */
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 220 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+
+    --primary: 215 70% 22%;
+    --primary-foreground: 40 30% 97%;
+
+    --secondary: 40 25% 92%;
+    --secondary-foreground: 220 25% 12%;
+
+    --muted: 40 20% 90%;
+    --muted-foreground: 220 15% 40%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 220 25% 12%;
+
+    --success: 152 60% 35%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 40 20% 85%;
+    --input: 40 20% 85%;
+    --ring: 215 70% 22%;
+
+    --radius: 0.75rem;
+
+    
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(215 70% 22%) 0%,
+      hsl(215 60% 30%) 50%,
+      hsl(200 50% 35%) 100%
+    );
+
+    --gradient-gold: linear-gradient(
+      135deg,
+      hsl(38 92% 50%) 0%,
+      hsl(45 95% 55%) 100%
+    );
+
+    
+    --shadow-soft: 0 4px 20px -4px hsl(220 25% 12% / 0.08);
+    --shadow-medium: 0 8px 30px -8px hsl(220 25% 12% / 0.12);
+
+    
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+
+@layer components {
+
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 md:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  
+  .nav-link {
+    @apply font-medium transition-colors text-primary-foreground hover:text-accent;
+  }
+
+  .mobile-link {
+    @apply py-3 px-4 text-left font-medium text-foreground hover:bg-secondary rounded-lg transition-colors;
+  }
+
+  
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+ 
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  
+  .btn-outline-light {
+    @apply px-5 py-2 rounded-lg font-semibold
+           border border-primary-foreground
+           text-primary-foreground
+           bg-transparent
+           transition-all duration-300;
+  }
+
+  .btn-outline-light:hover {
+    @apply bg-primary-foreground/10;
+  }
+
+  .btn-hero {
+    @apply px-5 py-2 rounded-lg font-semibold
+           bg-accent text-foreground
+           transition-all duration-300;
+  }
+
+  .btn-hero:hover {
+    @apply opacity-90 shadow-soft;
+  }
+
+  .nav-light {
+  @apply text-primary-foreground;
+}
+
+.nav-dark {
+  @apply text-foreground;
+}
+
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
