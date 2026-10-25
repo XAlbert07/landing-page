@@ -4,6 +4,14 @@ Page d'accueil vitrine pour **ConcoursElite**, un concept de plateforme de prép
 
 Le projet présente l'offre de préparation, la méthode, les concours, les tarifs et les appels à l'inscription dans une interface responsive.
 
+## Démo
+
+Le dépôt est associé à une adresse de déploiement dans les paramètres GitHub :
+
+**[Ouvrir ConcoursElite](https://landing-page-delta-five-51-alberts-projects-394db913.vercel.app/)**
+
+Si le lien ne s'ouvre pas, vérifie l'état du déploiement Vercel associé à ce dépôt. Le code de ce dépôt contient le frontend statique ; la présence d'un bouton ou d'une section d'inscription ne signifie pas qu'un backend de gestion des inscriptions est connecté.
+
 ## Aperçu des fonctionnalités
 
 - Navigation responsive avec menu mobile.
@@ -12,8 +20,6 @@ Le projet présente l'offre de préparation, la méthode, les concours, les tari
 - En-tête qui adapte son apparence au défilement.
 - Mise en page construite avec Tailwind CSS et styles personnalisés.
 - Icônes Lucide et typographies Google Fonts.
-
-> Ce dépôt contient la partie frontend statique. La présence d'un bouton ou d'une section d'inscription ne signifie pas qu'un backend de gestion des inscriptions est connecté.
 
 ## Technologies
 
